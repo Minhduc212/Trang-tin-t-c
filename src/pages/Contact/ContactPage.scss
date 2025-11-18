@@ -1,0 +1,147 @@
+$border: #e4e7ec;
+$muted: #8c94a3;
+$primary: #18a0b8;
+$bg-soft: #f7f8fc;
+
+.contact-page {
+  padding: 24px 0 40px;
+  background-color: #ffffff;
+
+  &__main {
+    margin-bottom: 24px;
+  }
+
+  &__sidebar {
+    margin-top: 8px;
+  }
+}
+
+/* Hero intro */
+.contact-hero {
+  margin-bottom: 16px;
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: $muted;
+  }
+}
+
+/* Office cards */
+.contact-offices {
+  margin-bottom: 12px;
+}
+
+.contact-office-card {
+  border: 1px solid $border;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.87rem;
+
+  h3 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    color: $muted;
+    margin-bottom: 4px;
+  }
+
+  &__addr {
+    margin-bottom: 4px;
+  }
+
+  &__line {
+    margin-bottom: 2px;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Form */
+.contact-form {
+  border-radius: 10px;
+  border: 1px solid $border;
+
+  &__title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+}
+
+/* Sidebar */
+.contact-sidebox {
+  border-radius: 10px;
+  border: 1px solid $border;
+  background-color: #fff;
+  overflow: hidden;
+
+  &__header {
+    padding: 8px 10px;
+    border-bottom: 1px solid $border;
+    background-color: $bg-soft;
+
+    h3 {
+      font-size: 0.9rem;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  &__body {
+    padding: 8px 10px;
+  }
+}
+
+.contact-channel {
+  font-size: 0.87rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f1f1;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__label {
+    color: $muted;
+    margin-bottom: 2px;
+  }
+
+  &__value {
+    color: $primary;
+    text-decoration: none;
+    word-break: break-all;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+  .contact-page__main {
+    margin-bottom: 20px;
+  }
+}

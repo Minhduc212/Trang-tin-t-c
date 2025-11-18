@@ -1,0 +1,36 @@
+.form-label {
+  font-size: 0.85rem;
+  color: $text-light;
+}
+
+.form-control {
+  background-color: $bg-dark;
+  border-radius: $radius-md;
+  border: 1px solid #293143;
+  color: $text-light;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.9rem;
+  transition: $transition;
+
+  &::placeholder {
+    color: #6e7484;
+  }
+
+  &:focus {
+    background-color: $bg-dark;
+    border-color: $primary;
+    box-shadow: 0 0 0 0.15rem rgba(255, 78, 80, 0.4);
+  }
+
+  &.is-valid {
+    border-color: $success !important;
+  }
+
+  &.is-invalid {
+    border-color: $danger !important;
+  }
+}
+
+.invalid-feedback {
+  font-size: 0.78rem;
+}
